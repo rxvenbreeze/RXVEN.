@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background: #404040;
+  background: #404040; /* Dark background */
   font-family: 'Montserrat', sans-serif;
   color: #FFFFFF;
 }
@@ -40,6 +40,7 @@ body {
   font-size: 1rem;
   letter-spacing: 0.5px;
   transition: color 0.3s ease;
+  text-transform: uppercase;
 }
 
 .nav-link:hover {
@@ -69,24 +70,22 @@ body {
 .main {
   flex: 1;
   background: #404040;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
   position: relative;
+  display: flex;
   flex-direction: column;
   padding: 40px;
+  box-sizing: border-box;
   gap: 20px;
-  text-align: center;
 }
 
-.main img {
-  max-width: 100%;
-  max-height: 60vh;
-  object-fit: cover;
-  border: 1px solid #FFFFFF33;
+/* Logo at top-left corner of main content */
+.main .logo-top {
+  max-width: 150px;
+  max-height: 150px;
+  object-fit: contain;
 }
 
+/* Headings and text in main content */
 .main h1 {
   font-size: 2rem;
   font-weight: 600;
@@ -96,6 +95,7 @@ body {
 .main p {
   font-size: 1rem;
   color: #FFFFFFCC;
+  line-height: 1.5;
 }
 
 /* Responsive */
